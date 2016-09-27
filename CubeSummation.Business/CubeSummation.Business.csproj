@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB8FF73B-6585-46DB-AE2D-06F1F7B102FA}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{E127DF83-00E9-46BA-BB06-B8DCBC26BA87}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CubeSummation</RootNamespace>
-    <AssemblyName>CubeSummation</AssemblyName>
+    <RootNamespace>CubeSummation.Business</RootNamespace>
+    <AssemblyName>CubeSummation.Business</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,11 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\..\CubeSummation.Common\CubeSummation.Common.csproj">
+      <Project>{45353a1e-f845-4eb9-91b3-94c03c8ff61d}</Project>
+      <Name>CubeSummation.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CubeSummation.Data\CubeSummation.Data.csproj">
+      <Project>{50faae2f-8935-43ee-bc05-d17f9b4d3414}</Project>
+      <Name>CubeSummation.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
