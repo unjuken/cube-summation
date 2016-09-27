@@ -54,13 +54,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CubeSummation.Common\CubeSummation.Common.csproj">
-      <Project>{45353a1e-f845-4eb9-91b3-94c03c8ff61d}</Project>
-      <Name>CubeSummation.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CubeSummation.Business\CubeSummation.Business.csproj">
       <Project>{e127df83-00e9-46ba-bb06-b8dcbc26ba87}</Project>
       <Name>CubeSummation.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CubeSummation.Common\CubeSummation.Common.csproj">
+      <Project>{45353a1e-f845-4eb9-91b3-94c03c8ff61d}</Project>
+      <Name>CubeSummation.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
