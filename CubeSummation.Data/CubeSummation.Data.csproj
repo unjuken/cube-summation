@@ -40,11 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CubeRepository.cs" />
+    <Compile Include="Interfaces\ICubeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CubeSummation.Common\CubeSummation.Common.csproj">
       <Project>{45353a1e-f845-4eb9-91b3-94c03c8ff61d}</Project>
